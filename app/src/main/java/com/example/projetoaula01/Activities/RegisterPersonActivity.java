@@ -3,6 +3,7 @@ package com.example.projetoaula01.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -22,6 +23,17 @@ public class RegisterPersonActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register_person);
 
         binding();
+
+        saveButton.setOnClickListener(handleSavePerson());
+    }
+
+    private View.OnClickListener handleSavePerson() {
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        };
     }
 
     private void binding() {
