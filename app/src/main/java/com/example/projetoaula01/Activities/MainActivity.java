@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
     }
-
     ActivityResultLauncher<Intent> viewListPerson = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -58,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
     }
-
     ActivityResultLauncher<Intent> viewRegisterRemedy = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
@@ -79,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
             }
         };
     }
-
     ActivityResultLauncher<Intent> viewRegisterPerson = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             new ActivityResultCallback<ActivityResult>() {
